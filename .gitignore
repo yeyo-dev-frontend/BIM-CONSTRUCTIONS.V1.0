@@ -9,7 +9,8 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
-.package-lock.json
+
+package-lock.json
 
 # testing
 /coverage
@@ -24,6 +25,8 @@
 # misc
 .DS_Store
 *.pem
+
+nextjs-js-architect-original.md_backup
 
 # debug
 npm-debug.log*
