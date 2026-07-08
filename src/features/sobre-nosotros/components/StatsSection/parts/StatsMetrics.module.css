@@ -48,16 +48,26 @@
 
 @media (max-width: 768px) {
   .metrics {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-2xl) var(--space-lg);
+    flex-direction: column;
+    gap: var(--space-2xl);
+    padding: var(--space-xl) 0 var(--space-2xl);
   }
 
   .metric {
-    padding: 0 var(--space-lg);
+    padding: 0;
+    width: 100%;
   }
 
+  /* Cambiar el divisor vertical por uno horizontal en móvil */
   .metric:not(:last-child)::after {
-    display: none;
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: auto;
+    bottom: calc(var(--space-2xl) * -0.5);
+    transform: translateX(50%);
+    width: 50%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--color-gray-300), transparent);
   }
 }
