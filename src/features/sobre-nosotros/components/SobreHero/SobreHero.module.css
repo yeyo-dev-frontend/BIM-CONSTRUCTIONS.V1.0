@@ -18,7 +18,7 @@
   width: 100%;
   position: relative;
   z-index: 10;
-  transform: translateY(50%); /* Pushes the banner down so it perfectly straddles the gray hero and the white section below */
+  transform: translateY(30%); /* Pushes the banner down so it perfectly straddles the gray hero and the white section below */
 }
 
 /* ---- Responsive ---- */

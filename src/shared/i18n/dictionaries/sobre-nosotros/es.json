@@ -44,5 +44,12 @@
     "stat2Label": "Cumplimiento en\nPlazos y Presupuestos",
     "stat3Number": "98%",
     "stat3Label": "Clientes\nSatisfechos"
+  },
+  "cta": {
+    "title": "¿TIENES UN PROYECTO EN MENTE?",
+    "highlight": "HAGÁMOSLO REALIDAD",
+    "subtitle": "Déjanos la planificación y la ingeniería en manos de expertos. Asegura tu inversión con un equipo que cumple.",
+    "label": "¿Tienes algún proyecto en mente?",
+    "btn": "Contáctanos"
   }
 }

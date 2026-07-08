@@ -5,6 +5,7 @@ import { ConoceHistoria } from "@/features/sobre-nosotros/components/ConoceHisto
 import { MisionVision } from "@/features/sobre-nosotros/components/MisionVision/MisionVision";
 import { Valores } from "@/features/sobre-nosotros/components/Valores/Valores";
 import { StatsSection } from "@/features/sobre-nosotros/components/StatsSection/StatsSection";
+import { SobreCtaBanner } from "@/features/sobre-nosotros/components/SobreCtaBanner/SobreCtaBanner";
 
 /**
  * Sobre Nosotros page — Server Component.
@@ -33,8 +34,11 @@ export default async function SobreNosotrosPage({ params }) {
       {/* 5 — Valores que nos identifican */}
       <Valores dict={t.valores} />
 
-      {/* 6 — Métricas + CTA de contacto */}
+      {/* 6 — Métricas + flecha indicadora */}
       <StatsSection lang={lang} dict={t.stats} />
+
+      {/* 7 — CTA final: ¿Tienes un proyecto en mente? */}
+      <SobreCtaBanner lang={lang} dict={t.cta} />
     </main>
   );
 }

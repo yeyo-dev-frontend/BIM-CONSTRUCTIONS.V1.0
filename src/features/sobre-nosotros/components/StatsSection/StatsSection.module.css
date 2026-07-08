@@ -3,7 +3,9 @@
   width: 100%;
   background-color: var(--color-gray-50);
   padding: var(--space-3xl) 0;
-  overflow: hidden;
+  z-index: 10;
+  /* overflow: visible para que la mitad de la flecha pueda sobresalir hacia abajo */
+  overflow: visible;
 }
 
 /* ---- Fondo: rayos diagonales ---- */
@@ -12,6 +14,7 @@
   inset: 0;
   z-index: 0;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .ray {
@@ -33,12 +36,35 @@
   z-index: 1;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 var(--space-2xl);
+  padding: 0 var(--space-2xl) 160px;
+}
+
+/* ---- Flecha circular ---- */
+.arrowIcon {
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
 }
 
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
   .container {
-    padding: 0 var(--space-lg);
+    padding: 0 var(--space-lg) 100px;
+  }
+
+  .arrowIcon {
+    width: 52px;
+    height: 52px;
   }
 }
