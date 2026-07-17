@@ -12,14 +12,14 @@ export function ServiciosCTA({ dict }) {
         <div className={styles.leftColumn}>
           {dict.boxes && dict.boxes.slice(0, 2).map((box, idx) => (
             <div key={idx} className={styles.blackBox}>
-              <Title level="h3" className={styles.boxTitle}>{box.title}</Title>
+              <Title level="h3" variant="white" className={styles.boxTitle}>{box.title}</Title>
             </div>
           ))}
         </div>
         <div className={styles.rightColumn}>
           {dict.boxes && dict.boxes.slice(2, 4).map((box, idx) => (
             <div key={idx + 2} className={styles.blackBox}>
-              <h3 className={styles.boxTitle}>{box.title}</h3>
+              <Title level="h3" variant="white" className={styles.boxTitle}>{box.title}</Title>
             </div>
           ))}
         </div>
@@ -36,7 +36,7 @@ export function ServiciosCTA({ dict }) {
             </Link>
           </div>
           <div className={styles.logoWrapper}>
-            <Image src="/images/logo-metal.png" alt="BIM Logo" width={200} height={100} className={styles.logo} />
+            <Image src="/images/logo-metal.png.png" alt="BIM Logo" width={200} height={100} className={styles.logo} />
           </div>
         </div>
       </div>
