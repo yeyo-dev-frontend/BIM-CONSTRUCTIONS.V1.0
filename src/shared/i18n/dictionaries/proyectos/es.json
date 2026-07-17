@@ -3,5 +3,13 @@
     "title": "Proyectos con Sellos de Excelencia y Precisión",
     "description": "Explora nuestro portafolio de edificaciones civiles, arquitectura de vanguardia y soluciones con tecnología BIM que marcan la diferencia.",
     "btnCta": "Agendar"
+  },
+  "nuestrosProyectos": {
+    "tabs": {
+      "todos": "TODOS",
+      "ejecucion": "EN EJECUCIÓN",
+      "terminado": "TERMINADOS"
+    },
+    "emptyState": "No se encontraron proyectos para este filtro."
   }
 }

@@ -3,5 +3,13 @@
     "title": "Projects with Seals of Excellence and Precision",
     "description": "Explore our portfolio of civil buildings, avant-garde architecture and solutions with BIM technology that make a difference.",
     "btnCta": "Schedule"
+  },
+  "nuestrosProyectos": {
+    "tabs": {
+      "todos": "ALL",
+      "ejecucion": "IN PROGRESS",
+      "terminado": "COMPLETED"
+    },
+    "emptyState": "No projects found for this filter."
   }
 }

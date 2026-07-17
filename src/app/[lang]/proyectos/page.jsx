@@ -1,5 +1,6 @@
 import { getDictionary } from "@/shared/i18n/get-dictionary";
 import { ProyectosHero } from "@/features/proyectos/components/ProyectosHero/ProyectosHero";
+import { NuestrosProyectos } from "@/features/proyectos/components/NuestrosProyectos/NuestrosProyectos";
 
 /**
  * Proyectos page — Server Component.
@@ -15,6 +16,7 @@ export default async function ProyectosPage({ params }) {
   return (
     <main>
       <ProyectosHero dict={dict.proyectos?.hero} lang={lang} />
+      <NuestrosProyectos dict={dict.proyectos?.nuestrosProyectos} lang={lang} />
     </main>
   );
 }
