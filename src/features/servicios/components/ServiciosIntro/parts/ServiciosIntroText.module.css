@@ -1,0 +1,32 @@
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  border-left: 2px solid var(--color-primary);
+  padding-left: var(--space-2xl);
+}
+
+.heading {
+  font-family: var(--font-sans);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.quote, .quote2 {
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  color: var(--color-gray-700);
+  line-height: 1.75;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .textGroup {
+    border-left: none;
+    padding-left: 0;
+    border-top: 2px solid var(--color-gray-200);
+    padding-top: var(--space-lg);
+  }
+}

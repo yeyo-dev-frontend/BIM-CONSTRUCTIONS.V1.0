@@ -16,17 +16,14 @@ export function AboutText({ dict }) {
 
   return (
     <div className={styles.content}>
-      {/* Título Principal */}
       <Title level="h2" className={styles.title}>
         {dict.title}
       </Title>
       
-      {/* Descripción Principal */}
       <Text size="lg" className={styles.description}>
         {dict.description}
       </Text>
 
-      {/* Bloque Destacado de Historia */}
       <div className={styles.historyCard}>
         <Title level="h3" className={styles.historyTitle}>
           {dict.historyTitle}

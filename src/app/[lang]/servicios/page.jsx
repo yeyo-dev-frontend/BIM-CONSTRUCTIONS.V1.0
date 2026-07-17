@@ -25,19 +25,14 @@ export default async function ServiciosPage({ params }) {
 
   return (
     <main>
-      {/* 1 — Hero: imagen edificio + texto + botón "Solicita Asesoría" */}
       <ServiciosHero lang={lang} dict={t.hero} />
 
-      {/* 2 — Introducción: fondo gris, 2 fotos izquierda, ¿Qué hacemos? derecha */}
       <ServiciosIntro dict={t.intro} />
 
-      {/* 3 — Panel: NUESTROS SERVICIOS (Grid 4 fotos) */}
       <ServiciosPanel lang={lang} dict={t.panel} />
 
-      {/* 4 — Enfoque (El Valor de Nuestro Enfoque) */}
       <ServiciosEnfoque dict={t.valor} />
 
-      {/* 5 — Cajas negras y CTA inferior */}
       <ServiciosCTA dict={t.cta} />
     </main>
   );

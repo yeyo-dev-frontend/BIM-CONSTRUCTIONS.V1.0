@@ -1,4 +1,4 @@
-import styles from "../ServiciosHero.module.css";
+import styles from "./ServiciosHeroBg.module.css";
 
 export function ServiciosHeroBg() {
   return (

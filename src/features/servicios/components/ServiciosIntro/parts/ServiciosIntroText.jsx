@@ -1,4 +1,4 @@
-import styles from "../ServiciosIntro.module.css";
+import styles from "./ServiciosIntroText.module.css";
 import { Title } from "@/shared/ui/Title/Title";
 import { Text } from "@/shared/ui/Text/Text";
 

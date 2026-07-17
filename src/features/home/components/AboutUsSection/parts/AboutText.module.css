@@ -15,7 +15,6 @@
   line-height: 1.7;
 }
 
-/* Bloque destacado para "Cómo Empezamos" */
 .historyCard {
   background-color: var(--color-muted);
   border-left: 4px solid var(--color-accent);

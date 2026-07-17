@@ -1,0 +1,27 @@
+.header {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-sm);
+  max-width: 800px;
+}
+
+.title {
+  font-family: var(--font-sans);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.description {
+  font-family: var(--font-sans);
+  font-size: clamp(0.9rem, 1.2vw, 1rem);
+  color: var(--color-gray-700);
+  line-height: 1.6;
+  margin: 0;
+}

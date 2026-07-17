@@ -1,3 +1,4 @@
+import { Button } from "@/shared/ui/Button/Button";
 import { cn } from "@/shared/lib/cn";
 import styles from "./FilterTabs.module.css";
 import { Text } from "@/shared/ui/Text/Text";
@@ -20,8 +21,9 @@ export function FilterTabs({ activeFilter, onChange, dict }) {
   return (
     <div className={styles.tabsContainer}>
       {tabs.map((tab) => (
-        <button
+        <Button
           key={tab.id}
+          variant="outline"
           className={cn(styles.tabBtn, activeFilter === tab.id && styles.active)}
           onClick={() => onChange(tab.id)}
           aria-pressed={activeFilter === tab.id}
@@ -31,7 +33,7 @@ export function FilterTabs({ activeFilter, onChange, dict }) {
               {tab.label}
             </Text>
           </div>
-        </button>
+        </Button>
       ))}
     </div>
   );

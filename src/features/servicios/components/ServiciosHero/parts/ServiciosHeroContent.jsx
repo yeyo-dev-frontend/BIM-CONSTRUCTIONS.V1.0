@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { Title } from "@/shared/ui/Title/Title";
 import { Text } from "@/shared/ui/Text/Text";
-import styles from "../ServiciosHero.module.css";
+import { Button } from "@/shared/ui/Button/Button";
+import styles from "./ServiciosHeroContent.module.css";
 
 export function ServiciosHeroContent({ lang, dict }) {
   return (
@@ -9,13 +9,9 @@ export function ServiciosHeroContent({ lang, dict }) {
       <div className={styles.content}>
         <Title level="h1" className={styles.title}>{dict.title}</Title>
         <Text as="p" className={styles.description}>{dict.description}</Text>
-        <Link
-          href={`/${lang}/contacto`}
-          className={styles.btn}
-          id="btn-servicios-hero"
-        >
+        <Button variant="primary" href={`/${lang}/contacto`} className={styles.btn}>
           {dict.btnContact}
-        </Link>
+        </Button>
       </div>
     </div>
   );

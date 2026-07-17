@@ -1,38 +1,43 @@
-import styles from "../ServiciosPanel.module.css";
+import styles from "./ServiciosPanelCollage.module.css";
+import Image from "next/image";
 
 export function ServiciosPanelCollage() {
   return (
-    <div className={styles.collage} aria-hidden="true">
-      {/* Card 1: Atrás (Arriba-Izquierda) */}
-      <div className={`${styles.card} ${styles.card1}`}>
-        <img
+    <div className={styles.grid}>
+      <div className={styles.imageWrapper}>
+        <Image
           src="/images/team-bim.png"
           alt="Ingeniería y diseño"
-          className={styles.cardImg}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className={styles.image}
         />
       </div>
-      {/* Card 2: Medio-Atrás */}
-      <div className={`${styles.card} ${styles.card2}`}>
-        <img
+      <div className={styles.imageWrapper}>
+        <Image
           src="/images/servicios/remodelaciones.png"
           alt="Remodelaciones"
-          className={styles.cardImg}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className={styles.image}
         />
       </div>
-      {/* Card 3: Medio-Adelante */}
-      <div className={`${styles.card} ${styles.card3}`}>
-        <img
+      <div className={styles.imageWrapper}>
+        <Image
           src="/images/servicios/construccion-civil.png"
           alt="Construcción civil"
-          className={styles.cardImg}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className={styles.image}
         />
       </div>
-      {/* Card 4: Adelante (Abajo-Derecha) */}
-      <div className={`${styles.card} ${styles.card4}`}>
-        <img
+      <div className={styles.imageWrapper}>
+        <Image
           src="/images/construction-plans.png"
           alt="Supervisión de obras"
-          className={styles.cardImg}
+          fill
+          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+          className={styles.image}
         />
       </div>
     </div>

@@ -1,0 +1,46 @@
+.photoGroup {
+  position: relative;
+  height: 380px;
+}
+
+.photo1,
+.photo2 {
+  position: absolute;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.photo1 {
+  width: 255px;
+  height: 255px;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  box-shadow: 0 0 20px rgba(var(--color-bim-blue-rgb), 0.4);
+  border: 1px solid rgba(var(--color-bim-blue-rgb), 0.2);
+}
+
+.photo2 {
+  width: 195px;
+  height: 190px;
+  bottom: 10px;
+  left: 155px;
+  z-index: 2;
+  box-shadow: 0 0 25px rgba(var(--color-bim-blue-rgb), 0.5);
+  border: 2px solid var(--color-white);
+}
+
+@media (max-width: 900px) {
+  .photoGroup {
+    height: 300px;
+  }
+  .photo1 { width: 200px; height: 200px; }
+  .photo2 { width: 160px; height: 155px; left: 120px; bottom: 5px; }
+}

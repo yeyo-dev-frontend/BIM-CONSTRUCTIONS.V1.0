@@ -1,7 +1,8 @@
-import styles from "../ServiciosEnfoque.module.css";
-import Link from "next/link";
+import styles from "./ServiciosEnfoqueText.module.css";
 import { Title } from "@/shared/ui/Title/Title";
 import { Text } from "@/shared/ui/Text/Text";
+import { Button } from "@/shared/ui/Button/Button";
+import { CheckCircle2 } from "lucide-react";
 
 export function ServiciosEnfoqueText({ dict }) {
   return (
@@ -15,17 +16,14 @@ export function ServiciosEnfoqueText({ dict }) {
       <div className={styles.checklist}>
         {dict.list?.map((item, index) => (
           <div key={index} className={styles.checklistItem}>
-            <svg className={styles.checkIcon} viewBox="0 0 24 24" fill="currentColor">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-            </svg>
+            <CheckCircle2 className={styles.checkIcon} />
             <Text as="span" className={styles.checkText}>{item}</Text>
           </div>
         ))}
       </div>
-      
-      <Link href="/es/contacto" className={styles.btn}>
+      <Button variant="primary" href="/es/proyectos" className={styles.btn}>
         {dict.btn || "Saber más"}
-      </Link>
+      </Button>
     </div>
   );
 }

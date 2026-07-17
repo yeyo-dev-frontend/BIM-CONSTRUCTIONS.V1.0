@@ -1,0 +1,19 @@
+.bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/servicios/hero-edificio.jpg");
+  background-size: cover;
+  background-position: center 40%;
+  background-repeat: no-repeat;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(var(--color-black-rgb), 0.72) 0%,
+    rgba(var(--color-black-rgb), 0.45) 55%,
+    rgba(var(--color-black-rgb), 0.15) 100%
+  );
+}
