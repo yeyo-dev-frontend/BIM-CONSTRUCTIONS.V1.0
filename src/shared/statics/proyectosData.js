@@ -48,8 +48,43 @@ export const PROYECTOS_DATA = [
 ];
 
 export const POR_QUE_ELEGIRNOS_CARDS = [
-  { id: "calidad", imageSrc: "/images/proyectos/elegirnos-calidad.png" },
-  { id: "puntualidad", imageSrc: "/images/proyectos/elegirnos-puntualidad.png" },
-  { id: "tecnologia", imageSrc: "/images/proyectos/elegirnos-tecnologia.png" },
-  { id: "seguridad", imageSrc: "/images/proyectos/elegirnos-seguridad.png" }
+  { 
+    id: "calidad", 
+    imageSrc: "/images/proyectos/elegirnos-calidad.png" 
+  },
+  { 
+    id: "puntualidad", 
+    imageSrc: "/images/proyectos/elegirnos-puntualidad.png" 
+  },
+  { 
+    id: "tecnologia", 
+    imageSrc: "/images/proyectos/elegirnos-tecnologia.png" 
+  },
+  { 
+    id: "seguridad", 
+    imageSrc: "/images/proyectos/elegirnos-seguridad.png" 
+  }
+];
+
+export const NUESTRO_PROCESO_STEPS = [
+  { 
+    id: "01", 
+    dictKey: "planificacion", 
+    iconName: "ClipboardList" 
+  },
+  { 
+    id: "02", 
+    dictKey: "diseno", 
+    iconName: "PenTool" 
+  },
+  { 
+    id: "03", 
+    dictKey: "construccion", 
+    iconName: "HardHat" 
+  },
+  { 
+    id: "04", 
+    dictKey: "entrega", 
+    iconName: "CheckSquare" 
+  }
 ];

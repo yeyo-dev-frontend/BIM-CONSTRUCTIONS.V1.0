@@ -18,5 +18,14 @@
     "puntualidad": "PUNTUALIDAD",
     "tecnologia": "TECNOLOGÍA",
     "seguridad": "SEGURIDAD"
+  },
+  "nuestroProceso": {
+    "title": "NUESTRO PROCESO",
+    "steps": {
+      "planificacion": "PLANIFICACIÓN",
+      "diseno": "DISEÑO",
+      "construccion": "CONSTRUCCIÓN",
+      "entrega": "ENTREGA"
+    }
   }
 }

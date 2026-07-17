@@ -18,5 +18,14 @@
     "puntualidad": "PUNCTUALITY",
     "tecnologia": "TECHNOLOGY",
     "seguridad": "SAFETY"
+  },
+  "nuestroProceso": {
+    "title": "OUR PROCESS",
+    "steps": {
+      "planificacion": "PLANNING",
+      "diseno": "DESIGN",
+      "construccion": "CONSTRUCTION",
+      "entrega": "DELIVERY"
+    }
   }
 }

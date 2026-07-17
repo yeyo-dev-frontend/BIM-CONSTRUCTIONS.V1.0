@@ -1,0 +1,81 @@
+.section {
+  position: relative;
+  width: 100%;
+  padding: 120px 0 170px 0;
+  overflow: hidden;
+}
+
+/* El fondo dividido mitad/mitad */
+.bgSplit {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  /* Gradiente suave desde oscuro, pasando por intermedios, hasta blanco puro */
+  background: linear-gradient(
+    to bottom,
+    var(--color-gray-900) 0%,
+    var(--color-gray-700) 40%,
+    var(--color-gray-200) 70%,
+    var(--color-white) 100%
+  );
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-2xl);
+}
+
+.title {
+  color: var(--color-white);
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* La línea de conexión en desktop */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 40px; /* Centrado con los íconos (80px height) */
+  left: 5%;
+  right: 5%;
+  height: 4px;
+  background: var(--color-primary);
+  z-index: 0;
+  border-radius: 2px;
+}
+
+
+
+/* Responsividad para móviles (cambiar a vertical) */
+@media (max-width: 900px) {
+  .timeline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2xl);
+    padding-left: 20px;
+  }
+  
+  /* Línea conectora vertical */
+  .timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 80px; /* (20px timeline padding + 20px step padding + 40px half-icon) */
+    width: 4px;
+    height: auto;
+    right: auto;
+  }
+
+}
