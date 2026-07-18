@@ -1,0 +1,71 @@
+.lightboxOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn var(--transition-fast) ease-out;
+}
+
+.closeBtn {
+  position: absolute;
+  top: var(--space-xl);
+  right: var(--space-xl);
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+  cursor: pointer;
+  z-index: 10000;
+  padding: var(--space-sm);
+  transition: transform var(--transition-fast);
+}
+
+.closeBtn:hover {
+  transform: scale(1.1);
+}
+
+.navBtnPrev,
+.navBtnNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  color: var(--color-white);
+  cursor: pointer;
+  z-index: 10000;
+  padding: var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.navBtnPrev {
+  left: var(--space-xl);
+}
+
+.navBtnNext {
+  right: var(--space-xl);
+}
+
+.navBtnPrev:hover,
+.navBtnNext:hover {
+  background: rgba(0, 0, 0, 0.8);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.lightboxImageContainer {
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  max-width: 1400px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

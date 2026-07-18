@@ -33,6 +33,23 @@
       "completed": "Completed Project",
       "inProgress": "In Progress"
     },
-    "backButton": "Back to Projects"
+    "backButton": "Back to Projects",
+    "info": {
+      "client": "CLIENT",
+      "status": "STATUS",
+      "executionTime": "EXECUTION TIME",
+      "area": "AREA",
+      "about": "About the Project",
+      "images": "Project Images",
+      "noImages": "No images available for this project.",
+      "expandImageAria": "Expand image",
+      "imageAlt": "Project image",
+      "lightboxAlt": "Fullscreen image",
+      "lightboxAria": "Image viewer",
+      "closeAria": "Close image",
+      "prevAria": "Previous image",
+      "nextAria": "Next image",
+      "defaultDescription": "Detailed information for this project is currently being drafted. We will update this section soon."
+    }
   }
 }

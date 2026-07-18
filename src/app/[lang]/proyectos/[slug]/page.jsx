@@ -1,5 +1,6 @@
 import { getDictionary } from "@/shared/i18n/get-dictionary";
 import { ProyectoDetalleHero } from "@/features/proyectos/components/ProyectoDetalleHero/ProyectoDetalleHero";
+import { ProyectoDetalleInfo } from "@/features/proyectos/components/ProyectoDetalleInfo/ProyectoDetalleInfo";
 import { PROYECTOS_DATA } from "@/shared/statics/proyectosData";
 import { notFound } from "next/navigation";
 
@@ -35,10 +36,9 @@ export default async function ProyectoDetallePage({ params }) {
         backText={dict.proyectos?.projectDetails?.backButton || "Volver a Proyectos"}
         lang={lang}
       />
-      {/* Futura sección de contenido */}
-      <div style={{ padding: "100px", textAlign: "center" }}>
-        <p>Próximamente: Detalles completos del proyecto aquí.</p>
-      </div>
+      {/* Sección de Información y Galería */}
+      <ProyectoDetalleInfo proyecto={proyecto} dict={dict} statusText={statusText} />
+      
     </main>
   );
 }

@@ -1,0 +1,16 @@
+.textColumn {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.descriptionParagraph {
+  color: var(--color-gray-700);
+  line-height: 1.7;
+}

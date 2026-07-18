@@ -33,6 +33,23 @@
       "completed": "Proyecto Terminado",
       "inProgress": "En Ejecución"
     },
-    "backButton": "Volver a Proyectos"
+    "backButton": "Volver a Proyectos",
+    "info": {
+      "client": "CLIENTE",
+      "status": "ESTADO",
+      "executionTime": "TIEMPO DE EJECUCIÓN",
+      "area": "ÁREA",
+      "about": "Sobre el Proyecto",
+      "images": "Imágenes del Proyecto",
+      "noImages": "No hay imágenes disponibles para este proyecto.",
+      "expandImageAria": "Ampliar imagen",
+      "imageAlt": "Imagen del proyecto",
+      "lightboxAlt": "Imagen en pantalla completa",
+      "lightboxAria": "Visor de imágenes",
+      "closeAria": "Cerrar imagen",
+      "prevAria": "Imagen anterior",
+      "nextAria": "Siguiente imagen",
+      "defaultDescription": "La información detallada de este proyecto se encuentra actualmente en redacción. Próximamente actualizaremos esta sección con todos los pormenores."
+    }
   }
 }

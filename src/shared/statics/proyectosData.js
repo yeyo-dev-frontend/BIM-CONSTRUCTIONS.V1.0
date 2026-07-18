@@ -9,8 +9,23 @@ export const PROYECTOS_DATA = [
     title: "HOSTAL",
     detailHeroTitle: "HOSTAL CR7-GOAT",
     status: "terminado",
+    client: "Cristiano Ronaldo",
+    executionTime: "18 Meses",
+    area: "12 000m²",
+    description: [
+      "El Desafío y Propósito 'La construcción del nuevo Hostal Boutique responde a la necesidad de crear espacios de lujo integrando un diseño arquitectónico que optimiza la experiencia del huésped. El principal reto consistió en proyectar una estructura vanguardista que respetara el entorno urbano mientras ofrecía amenidades de clase mundial.'",
+      "Innovación y Metodología 'Para asegurar la máxima precisión y optimización de recursos, implementamos la metodología BIM (Building Information Modeling) desde la fase de diseño preliminar. Esto nos permitió coordinar en tiempo real todas las ingenierías (estructuras, instalaciones sanitarias, eléctricas y climatización especializada), reduciendo a cero las interferencias críticas durante la etapa de construcción en campo.'",
+      "Sostenibilidad y Resultado 'El resultado es un complejo de vanguardia que integra sistemas de eficiencia energética. Un proyecto ejecutado bajo los más altos estándares de calidad arquitectónica y de ingeniería civil, entregado en el plazo previsto para el beneficio de la comunidad.'"
+    ],
     image: "/images/proyectos/hostal_project_1784149305429.png",
-    detailHeroImage: "/images/proyectos/hostal_maqueta_hero.png"
+    detailHeroImage: "/images/proyectos/hostal_maqueta_hero.png",
+    gallery: [
+      "/images/proyectos/hostal_maqueta_hero.png",
+      "/images/proyectos/hostal_maqueta_side.png",
+      "/images/proyectos/hostal_structure_3d.png",
+      "/images/proyectos/hostal_completed_front.png",
+      "/images/proyectos/hostal_completed_angle.png"
+    ]
   },
   {
     id: 2,

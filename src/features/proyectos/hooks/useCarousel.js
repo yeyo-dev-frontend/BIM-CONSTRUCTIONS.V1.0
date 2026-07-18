@@ -1,6 +1,4 @@
-'use client';
-
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 /**
  * Custom hook for managing a simple auto-advancing carousel.
@@ -12,29 +10,25 @@ import { useState, useEffect } from 'react';
 export function useCarousel(totalItems, intervalMs = 5000) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const next = () => {
+  const next = useCallback(() => {
     setCurrentIndex((prev) => (prev + 1) % totalItems);
-  };
+  }, [totalItems]);
 
-  const prev = () => {
+  const prev = useCallback(() => {
     setCurrentIndex((prev) => (prev - 1 + totalItems) % totalItems);
-  };
+  }, [totalItems]);
 
-  const goTo = (index) => {
+  const goTo = useCallback((index) => {
     if (index >= 0 && index < totalItems) {
       setCurrentIndex(index);
     }
-  };
+  }, [totalItems]);
 
   useEffect(() => {
     if (totalItems <= 1) return;
-    
-    const timer = setInterval(() => {
-      next();
-    }, intervalMs);
-
+    const timer = setInterval(next, intervalMs);
     return () => clearInterval(timer);
-  }, [totalItems, intervalMs]);
+  }, [next, intervalMs, totalItems]);
 
   return { currentIndex, next, prev, goTo };
 }
