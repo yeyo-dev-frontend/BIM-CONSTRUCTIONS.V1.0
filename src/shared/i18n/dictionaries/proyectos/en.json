@@ -27,5 +27,12 @@
       "construccion": "CONSTRUCTION",
       "entrega": "DELIVERY"
     }
+  },
+  "projectDetails": {
+    "status": {
+      "completed": "Completed Project",
+      "inProgress": "In Progress"
+    },
+    "backButton": "Back to Projects"
   }
 }

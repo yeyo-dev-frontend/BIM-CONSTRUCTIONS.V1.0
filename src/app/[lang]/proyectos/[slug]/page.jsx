@@ -1,5 +1,7 @@
-import { Title } from "@/shared/ui/Title/Title";
-import { Text } from "@/shared/ui/Text/Text";
+import { getDictionary } from "@/shared/i18n/get-dictionary";
+import { ProyectoDetalleHero } from "@/features/proyectos/components/ProyectoDetalleHero/ProyectoDetalleHero";
+import { PROYECTOS_DATA } from "@/shared/statics/proyectosData";
+import { notFound } from "next/navigation";
 
 /**
  * Dynamic route for individual projects.
@@ -10,13 +12,33 @@ import { Text } from "@/shared/ui/Text/Text";
  */
 export default async function ProyectoDetallePage({ params }) {
   const { lang, slug } = await params;
+  const dict = await getDictionary(lang);
+
+  const proyecto = PROYECTOS_DATA.find((p) => p.slug === slug);
+
+  if (!proyecto) {
+    notFound();
+  }
+
+  // Traducción dinámica del estado
+  const statusText =
+    proyecto.status === "terminado"
+      ? dict.proyectos?.projectDetails?.status?.completed || "Proyecto Terminado"
+      : dict.proyectos?.projectDetails?.status?.inProgress || "En Ejecución";
 
   return (
-    <main style={{ paddingTop: "120px", paddingBottom: "100px", textAlign: "center" }}>
-      <Title level="h1">Proyecto: {slug}</Title>
-      <Text as="p" style={{ marginTop: "20px" }}>
-        Próximamente: Detalles completos del proyecto aquí.
-      </Text>
+    <main>
+      <ProyectoDetalleHero 
+        title={proyecto.detailHeroTitle} 
+        imageSrc={proyecto.detailHeroImage} 
+        statusText={statusText}
+        backText={dict.proyectos?.projectDetails?.backButton || "Volver a Proyectos"}
+        lang={lang}
+      />
+      {/* Futura sección de contenido */}
+      <div style={{ padding: "100px", textAlign: "center" }}>
+        <p>Próximamente: Detalles completos del proyecto aquí.</p>
+      </div>
     </main>
   );
 }

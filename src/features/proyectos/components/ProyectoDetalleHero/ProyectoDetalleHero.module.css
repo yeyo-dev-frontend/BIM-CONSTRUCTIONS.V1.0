@@ -1,0 +1,125 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh; /* Ocupa casi toda la pantalla como el prototipo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* El overlay oscuro degradado para dar contraste, más sutil en este caso porque la imagen es gris clara */
+  background-color: var(--color-gray-900);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 40%);
+  z-index: 1;
+}
+
+.contentContainer {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-xl) var(--space-3xl) var(--space-xl);
+  display: flex;
+  align-items: center; /* Alinea verticalmente al centro de la fila */
+  justify-content: space-between;
+  
+  /* Animación de entrada */
+  animation: fadeInUp 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.title {
+  color: var(--color-white);
+  font-family: var(--font-heading);
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  text-transform: uppercase;
+  margin: 0;
+  letter-spacing: 0.05em;
+  flex: 1;
+  text-align: center;
+}
+
+.statusIndicator {
+  flex: 1;
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-end;
+  gap: var(--space-md);
+}
+
+.statusLine {
+  width: 2px;
+  background-color: var(--color-white);
+}
+
+.statusText {
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-sm);
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  line-height: 1.2;
+}
+
+.backLink {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--space-sm);
+  color: var(--color-white);
+  font-family: var(--font-sans);
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  font-weight: var(--font-weight-medium);
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.backLink:hover {
+  opacity: 1;
+  transform: translateX(-4px);
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xl);
+    padding-bottom: var(--space-2xl);
+  }
+  
+  .title {
+    text-align: center;
+  }
+  
+  .statusIndicator {
+    margin-left: 0;
+  }
+}

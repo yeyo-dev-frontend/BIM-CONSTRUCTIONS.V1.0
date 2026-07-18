@@ -27,5 +27,12 @@
       "construccion": "CONSTRUCCIÓN",
       "entrega": "ENTREGA"
     }
+  },
+  "projectDetails": {
+    "status": {
+      "completed": "Proyecto Terminado",
+      "inProgress": "En Ejecución"
+    },
+    "backButton": "Volver a Proyectos"
   }
 }
