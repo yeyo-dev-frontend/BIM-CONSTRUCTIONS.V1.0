@@ -1,0 +1,25 @@
+.curveContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 10;
+  /* El color se heredará de currentColor en el path. Lo ideal es darle color desde el padre,
+     o definirlo aquí. Usaremos el azul del diseño original. */
+  color: var(--color-white); 
+}
+
+.curveSvg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 80px; 
+}
+
+@media (max-width: 768px) {
+  .curveSvg {
+    height: 40px;
+  }
+}

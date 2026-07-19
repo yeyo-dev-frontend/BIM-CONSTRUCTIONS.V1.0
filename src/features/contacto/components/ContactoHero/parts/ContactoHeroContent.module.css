@@ -1,0 +1,44 @@
+.contentContainer {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: var(--space-xl);
+  padding: 0 var(--space-xl);
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+.title {
+  color: var(--color-white);
+  font-size: clamp(3rem, 5vw, 5rem);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.descriptionBox {
+  background: rgba(34, 60, 145, 0.7); /* Translucent corporate blue */
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: var(--space-xl) var(--space-2xl);
+  border-radius: var(--radius-sm);
+  max-width: 800px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.description {
+  color: var(--color-white);
+  margin: 0;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .descriptionBox {
+    padding: var(--space-md) var(--space-lg);
+  }
+}

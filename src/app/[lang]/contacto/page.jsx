@@ -1,13 +1,20 @@
+import { getDictionary } from "@/shared/i18n/get-dictionary";
+import { ContactoHero } from "@/features/contacto/components/ContactoHero/ContactoHero";
+
 /**
  * Contacto page — Server Component.
  *
+ * @param {Object} props
+ * @param {Promise<{lang: string}>} props.params
  * @returns {JSX.Element}
  */
-export default function ContactoPage() {
+export default async function ContactoPage({ params }) {
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
+
   return (
     <main>
-      <h1>Contacto</h1>
-      <p>Ponte en contacto con el equipo de BIM Constructions.</p>
+      <ContactoHero dict={dict.contacto?.hero || {}} />
     </main>
   );
 }
