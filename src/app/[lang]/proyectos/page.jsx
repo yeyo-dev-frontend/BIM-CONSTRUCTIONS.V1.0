@@ -3,7 +3,7 @@ import { ProyectosHero } from "@/features/proyectos/components/ProyectosHero/Pro
 import { NuestrosProyectos } from "@/features/proyectos/components/NuestrosProyectos/NuestrosProyectos";
 import { PorQueElegirnos } from "@/features/proyectos/components/PorQueElegirnos/PorQueElegirnos";
 import { NuestroProceso } from "@/features/proyectos/components/NuestroProceso/NuestroProceso";
-import { ContactCTA } from "@/features/contacto/components/ContactCTA/ContactCTA";
+import { ContactCTA } from "@/shared/ui/ContactCTA/ContactCTA";
 
 /**
  * Proyectos page — Server Component.

@@ -1,6 +1,7 @@
 import styles from "./ProyectoDetalleLocation.module.css";
 import { LocationHeader } from "./parts/LocationHeader";
 import { LocationMap } from "./parts/LocationMap";
+import { CIENTEGA_MAP_URL } from "@/shared/constants/maps";
 
 /**
  * Component to display the project's location using a Google Maps iframe.
