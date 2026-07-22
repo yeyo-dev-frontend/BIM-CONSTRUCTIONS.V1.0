@@ -74,6 +74,8 @@
     background: transparent;
     box-shadow: none;
     font-size: 1.4rem;
+    margin-left: 55px; /* Evita que el texto y el número se superpongan */
+    color: var(--color-primary) !important; /* Azul en móvil */
   }
   
   .watermark {
@@ -99,6 +101,7 @@
   .stepTitle {
     font-size: 1.1rem;
     text-align: left;
+    margin-left: 50px; /* Ajuste para evitar superposición en pantallas más pequeñas */
   }
 
   .watermark {
