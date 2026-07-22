@@ -22,7 +22,7 @@ export function ServiciosEnfoqueText({ dict }) {
         ))}
       </div>
       <Button variant="primary" href="/es/proyectos" className={styles.btn}>
-        {dict.btn || "Saber más"}
+        {dict.btn || "SOLICITAR INFORMACIÓN"}
       </Button>
     </div>
   );

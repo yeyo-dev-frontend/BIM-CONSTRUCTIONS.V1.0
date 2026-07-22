@@ -19,12 +19,19 @@
       "Tecnología BIM",
       "Equipo especializado",
       "Calidad garantizada"
-    ]
+    ],
+    "btn": "SOLICITAR INFORMACIÓN"
   },
   "panel": {
     "title": "NUESTROS SERVICIOS",
     "description": "Planificamos, organizamos y controlamos cada etapa del proyecto para garantizar el cumplimiento del alcance, presupuesto y cronograma.",
-    "btnContact": "Solicitar Información"
+    "btnContact": "Solicitar Información",
+    "cards": [
+      { "title": "PLANIFICACIÓN ESTRATÉGICA", "image": "/images/team-bim.png" },
+      { "title": "GESTIÓN DE RIESGOS", "image": "/images/servicios/remodelaciones.png" },
+      { "title": "CONTROL DE COSTOS", "image": "/images/servicios/construccion-civil.png" },
+      { "title": "SEGUIMIENTO DE AVANCES", "image": "/images/construction-plans.png" }
+    ]
   },
     "services": {
     "s1Title": "Gerencia de\nProyectos",
@@ -37,20 +44,20 @@
     "btn": "CONTÁCTANOS",
     "boxes": [
       {
-        "title": "Innovación Tecnológica",
-        "text": "Aplicamos las últimas herramientas BIM para garantizar precisión milimétrica."
+        "title": "¿CUÁNTO DEMORA UN PROYECTO?",
+        "text": ""
       },
       {
-        "title": "Calidad y Precisión",
-        "text": "Estándares rigurosos en cada fase del proceso constructivo."
+        "title": "¿TRABAJAN EN PROVINCIAS?",
+        "text": ""
       },
       {
-        "title": "Atención Personalizada",
-        "text": "Acompañamiento constante y comunicación transparente en todo momento."
+        "title": "¿REALIZAN SUPERVISIÓN ÚNICAMENTE?",
+        "text": ""
       },
       {
-        "title": "Sostenibilidad",
-        "text": "Prácticas eficientes que cuidan el medio ambiente y optimizan recursos."
+        "title": "¿CÓMO SOLICITO UNA COTIZACIÓN?",
+        "text": ""
       }
     ]
   },

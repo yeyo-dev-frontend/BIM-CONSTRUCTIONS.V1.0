@@ -15,7 +15,7 @@ export function ServiciosPanel({ lang, dict }) {
     <section className={styles.section}>
       <div className={styles.container}>
         <ServiciosPanelContent dict={dict} />
-        <ServiciosPanelCollage />
+        <ServiciosPanelCollage cards={dict.cards} />
       </div>
     </section>
   );
