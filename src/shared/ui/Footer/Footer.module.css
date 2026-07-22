@@ -4,4 +4,5 @@
   font-family: var(--font-montserrat-google), 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
+  --color-gray-500: rgba(255, 255, 255, 0.7);
 }
