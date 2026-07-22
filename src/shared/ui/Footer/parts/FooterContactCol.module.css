@@ -1,0 +1,131 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .col {
+    align-items: flex-start;
+  }
+}
+
+.title {
+  color: var(--color-white, #ffffff);
+  margin: 0;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.contactList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.contactList li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .contactList li {
+    justify-content: flex-start;
+  }
+}
+
+.contactList p, .contactList span {
+  color: var(--color-gray-500, #9ca3af);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.iconCircle {
+  background-color: var(--color-black, #000000);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white, #ffffff);
+  flex-shrink: 0;
+}
+
+.menuTitle {
+  font-family: var(--font-bebas-google), 'Bebas Neue', cursive;
+  color: var(--color-white, #ffffff);
+  letter-spacing: 0.05em;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.hoursGroup {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .hoursGroup {
+    align-items: flex-start;
+  }
+}
+
+.hoursBox {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .hoursBox {
+    justify-content: flex-start;
+  }
+}
+
+.clockIcon {
+  color: var(--color-accent, #ea580c);
+  flex-shrink: 0;
+}
+
+.hoursLines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: left;
+}
+
+.hourLine {
+  display: flex;
+  flex-direction: column;
+}
+
+.hourDay {
+  color: var(--color-white, #ffffff);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.hourTime {
+  color: var(--color-gray-500, #9ca3af);
+  font-size: 0.85rem;
+}

@@ -1,0 +1,51 @@
+import { Title } from '../../Title/Title';
+import { Text } from '../../Text/Text';
+import { Icon } from '../../Icon/Icon';
+import styles from './FooterContactCol.module.css';
+
+export function FooterContactCol({ dict }) {
+  return (
+    <div className={styles.col}>
+      <Title level="h3" className={styles.title}>{dict.contact.title}</Title>
+      <ul className={styles.contactList}>
+        <li>
+          <div className={styles.iconCircle}>
+            <Icon name="mapPin" size={16} />
+          </div>
+          <Text>{dict.contact.address}</Text>
+        </li>
+        <li>
+          <div className={styles.iconCircle}>
+            <Icon name="mail" size={16} />
+          </div>
+          <Text>{dict.contact.email}</Text>
+        </li>
+        <li>
+          <div className={styles.iconCircle}>
+            <Icon name="phone" size={16} />
+          </div>
+          <Text>{dict.contact.phone}</Text>
+        </li>
+      </ul>
+      
+      <div className={styles.hoursGroup}>
+        <Text className={styles.menuTitle}>{dict.contact.hoursTitle}</Text>
+        <div className={styles.hoursBox}>
+          <div className={styles.clockIcon}>
+            <Icon name="clock" size={24} />
+          </div>
+          <div className={styles.hoursLines}>
+            <div className={styles.hourLine}>
+              <Text className={styles.hourDay}>{dict.contact.hoursText1}</Text>
+              <Text className={styles.hourTime}>{dict.contact.hoursTime1}</Text>
+            </div>
+            <div className={styles.hourLine}>
+              <Text className={styles.hourDay}>{dict.contact.hoursText2}</Text>
+              <Text className={styles.hourTime}>{dict.contact.hoursTime2}</Text>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

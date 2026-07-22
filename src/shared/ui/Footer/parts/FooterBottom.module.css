@@ -1,0 +1,70 @@
+/* --- Bottom Area --- */
+.bottomArea {
+  background-color: var(--color-black, #000000);
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.bottomContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .bottomContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+}
+
+.copyright {
+  color: var(--color-gray-500, #6b7280);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.socialBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .socialBox {
+    flex-direction: row;
+    gap: 1rem;
+  }
+}
+
+.socialTitle {
+  color: var(--color-gray-500, #9ca3af);
+}
+
+.socialLinks {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.socialLinks a {
+  color: var(--color-accent, #ea580c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.socialLinks a:hover {
+  color: var(--color-white, #ffffff);
+  transform: translateY(-2px);
+}

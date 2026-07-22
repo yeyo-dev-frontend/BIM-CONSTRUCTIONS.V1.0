@@ -1,0 +1,106 @@
+/* --- Top Bar --- */
+.topBar {
+  background-color: var(--color-black, #000000);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.topContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .topContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 1.5rem;
+    text-align: left;
+  }
+}
+
+.logo {
+  font-family: var(--font-bebas-google), 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logoWhite {
+  color: var(--color-white, #ffffff);
+}
+
+.logoOrange {
+  color: var(--color-accent, #ea580c);
+}
+
+@media (min-width: 768px) {
+  .logo {
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: baseline;
+  }
+}
+
+.slogan {
+  color: var(--color-gray-500, #9ca3af);
+  font-size: 0.95rem;
+  max-width: 300px;
+  text-align: center;
+}
+
+.ctaBox {
+  background-color: var(--color-accent, #ea580c);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .ctaBox {
+    height: 100%;
+    width: auto;
+  }
+}
+
+.ctaIconWrapper {
+  background-color: var(--color-black, #000000);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white, #ffffff);
+  flex-shrink: 0;
+}
+
+.ctaTextContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.ctaTitle {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-white, #ffffff);
+}
+
+.ctaPhone {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.9);
+  white-space: pre-line;
+}
