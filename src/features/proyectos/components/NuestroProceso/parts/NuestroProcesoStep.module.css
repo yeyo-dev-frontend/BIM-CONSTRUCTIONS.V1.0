@@ -76,6 +76,9 @@
     font-size: 1.4rem;
     margin-left: 55px; /* Evita que el texto y el número se superpongan */
     color: var(--color-primary) !important; /* Azul en móvil */
+    /* Borde blanco y resplandor para garantizar legibilidad en el fondo oscuro */
+    -webkit-text-stroke: 1px var(--color-white);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.9);
   }
   
   .watermark {
