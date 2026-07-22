@@ -16,7 +16,7 @@ export function ServiciosEnfoquePhotos() {
       </div>
       
       <div className={styles.plusBox}>
-        <Text as="span" weight="bold">+100</Text>
+        <Text as="span" weight="bold" variant="white">+100</Text>
       </div>
 
       <div className={styles.photo2}>
