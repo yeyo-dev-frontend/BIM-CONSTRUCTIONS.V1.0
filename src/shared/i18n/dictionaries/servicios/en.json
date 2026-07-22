@@ -12,7 +12,13 @@
   "panel": {
     "title": "OUR SERVICES",
     "description": "We plan, organize and control every stage of the project to ensure compliance with scope, budget and schedule.",
-    "btnContact": "Request Information"
+    "btnContact": "Request Information",
+    "cards": [
+      { "title": "STRATEGIC PLANNING", "image": "/images/team-bim.png" },
+      { "title": "RISK MANAGEMENT", "image": "/images/servicios/remodelaciones.png" },
+      { "title": "COST CONTROL", "image": "/images/servicios/construccion-civil.png" },
+      { "title": "PROGRESS TRACKING", "image": "/images/construction-plans.png" }
+    ]
   },
   "services": {
     "s1Title": "Project\nManagement",
@@ -29,7 +35,8 @@
       "BIM Technology",
       "Specialized team",
       "Guaranteed quality"
-    ]
+    ],
+    "btn": "REQUEST INFORMATION"
   },
   "cta": {
     "title": "Ready to start your project?",
@@ -37,20 +44,20 @@
     "btn": "CONTACT US",
     "boxes": [
       {
-        "title": "Technological Innovation",
-        "text": "We apply the latest BIM tools to guarantee millimetric precision."
+        "title": "HOW LONG DOES A PROJECT TAKE?",
+        "text": ""
       },
       {
-        "title": "Quality and Precision",
-        "text": "Rigorous standards in each phase of the construction process."
+        "title": "DO YOU WORK IN PROVINCES?",
+        "text": ""
       },
       {
-        "title": "Personalized Attention",
-        "text": "Constant guidance and transparent communication at all times."
+        "title": "DO YOU ONLY PROVIDE SUPERVISION?",
+        "text": ""
       },
       {
-        "title": "Sustainability",
-        "text": "Efficient practices that protect the environment and optimize resources."
+        "title": "HOW DO I REQUEST A QUOTE?",
+        "text": ""
       }
     ]
   },
