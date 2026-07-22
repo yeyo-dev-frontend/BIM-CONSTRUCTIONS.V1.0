@@ -15,10 +15,10 @@ export function SobreHeroContent({ dict, lang }) {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <Title as="h1" level="h1" className={styles.title}>
+        <Title as="h1" level="h1" variant="secondary" className={styles.title}>
           {dict.title}
         </Title>
-        <Text size="base" className={styles.description}>
+        <Text size="base" variant="white" className={styles.description}>
           {dict.description}
         </Text>
         <div className={styles.actions}>
